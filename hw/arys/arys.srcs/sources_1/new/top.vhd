@@ -3,13 +3,13 @@ use ieee.std_logic_1164.all;
 
 entity top is
     port (
-        i0: in std_logic;
-        i1: in std_logic;
-        o0: out std_logic
+        sw: in std_logic_vector(15 downto 0);
+        led: out std_logic_vector(15 downto 0)
     );
 end top;
 
 architecture arch of top is
 begin
-    o0 <= i0 and i1;
+    and_unit: entity work.and16(arch)
+        port map(a => sw, b => "1111111111111111", r => led);
 end arch;
