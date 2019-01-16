@@ -113,22 +113,22 @@ end mux16;
 
 architecture arch of mux16 is
 begin
-    r(0) <= a(0) when sel = '1' else b(0);
-    r(1) <= a(1) when sel = '1' else b(1);
-    r(2) <= a(2) when sel = '1' else b(2);
-    r(3) <= a(3) when sel = '1' else b(3);
-    r(4) <= a(4) when sel = '1' else b(4);
-    r(5) <= a(5) when sel = '1' else b(5);
-    r(6) <= a(6) when sel = '1' else b(6);
-    r(7) <= a(7) when sel = '1' else b(7);
-    r(8) <= a(8) when sel = '1' else b(8);
-    r(9) <= a(9) when sel = '1' else b(9);
-    r(10) <= a(10) when sel = '1' else b(10);
-    r(11) <= a(11) when sel = '1' else b(11);
-    r(12) <= a(12) when sel = '1' else b(12);
-    r(13) <= a(13) when sel = '1' else b(13);
-    r(14) <= a(14) when sel = '1' else b(14);
-    r(15) <= a(15) when sel = '1' else b(15);
+    r(0) <= a(0) when sel = '0' else b(0);
+    r(1) <= a(1) when sel = '0' else b(1);
+    r(2) <= a(2) when sel = '0' else b(2);
+    r(3) <= a(3) when sel = '0' else b(3);
+    r(4) <= a(4) when sel = '0' else b(4);
+    r(5) <= a(5) when sel = '0' else b(5);
+    r(6) <= a(6) when sel = '0' else b(6);
+    r(7) <= a(7) when sel = '0' else b(7);
+    r(8) <= a(8) when sel = '0' else b(8);
+    r(9) <= a(9) when sel = '0' else b(9);
+    r(10) <= a(10) when sel = '0' else b(10);
+    r(11) <= a(11) when sel = '0' else b(11);
+    r(12) <= a(12) when sel = '0' else b(12);
+    r(13) <= a(13) when sel = '0' else b(13);
+    r(14) <= a(14) when sel = '0' else b(14);
+    r(15) <= a(15) when sel = '0' else b(15);
 end arch;
 
 --------------------------------------------------------------------------------
